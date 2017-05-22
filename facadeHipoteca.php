@@ -17,9 +17,9 @@ class facadeHipoteca
 
     public function esFiable ($cliente){
         if($this->_banco->tieneFondos($cliente) && $this->_credito->historialCorrecto($cliente) && $this->prestamo->tienePrestamo($cliente) ){
-
+            echo "Si es fiable";
         }else{
-
+            echo "no es fiable";
         }
     }
 }
